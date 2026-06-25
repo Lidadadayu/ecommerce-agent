@@ -1,0 +1,2 @@
+{"analysis":{"order_id":"O202605010001","payment_amount":"299.00","product_names":["无线蓝牙耳机 Pro"],"order_status":"已签收"},"customer_id":"C10001","expected_matched":true}
+{"analysis":{"order_id":"O202605010001","payment_amount":"399.00","product_names":["无线蓝牙耳机 Pro"],"order_status":"已签收"},"customer_id":"C10001","expected_matched":false,"expected_mismatch_field":"payment_amount"}

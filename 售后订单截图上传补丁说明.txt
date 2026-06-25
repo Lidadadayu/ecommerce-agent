@@ -1,0 +1,60 @@
+售后订单截图上传补丁说明
+
+本次完成第三优先级：售后凭证上传。
+当前只做订单截图上传，不做 OCR。
+
+主要功能：
+1. 前端右侧新增“订单截图凭证”模块。
+2. 用户可以上传 png/jpg/jpeg/webp 图片。
+3. 后端保存到 data/runtime/uploads/order_screenshots/。
+4. 后端生成 evidence_id。
+5. 上传记录写入 data/runtime/uploads/upload_records.jsonl。
+6. 前端把 evidence_id 写入 memory.current_business_context。
+7. 创建售后工单 ticket_create 时，会自动把 evidence_ids 带入工具参数。
+8. create_aftersale_ticket 会把 evidence_ids 写入 rule_result JSON，供后续人工审核参考。
+9. 工单创建回复会显示已关联凭证。
+
+新增：
+agent/evidence_store.py
+api/upload_routes.py
+scripts/upload_api_smoke_test.py
+docs/ORDER_SCREENSHOT_UPLOAD.md
+
+修改：
+api/server.py
+frontend_api_client.py
+app_api_streaming.py
+agent/workflow_nodes.py
+agent/slot_filling.py
+agent/rule_agent.py
+tools/business_tools.py
+tools/tool_registry.py
+requirements.txt
+
+依赖：
+需要 python-multipart。
+已加入 requirements.txt。
+
+操作：
+1. 覆盖补丁。
+2. 安装依赖：
+   pip install -r requirements.txt
+
+3. 启动后端：
+   python scripts/run_api.py --port 8001
+
+4. 测试上传接口：
+   python scripts/upload_api_smoke_test.py
+
+5. 启动系统：
+   python scripts/run_system.py --auto-port
+
+前端测试：
+1. 切换 C10001 张三。
+2. 右侧上传订单截图。
+3. 继续问：我要退 RV4001。
+4. 创建工单时应关联已上传 evidence_id。
+
+下一步建议：
+做第四优先级：人工审核后台页面。
+人工审核后台可以查看待审核工单，并展示用户上传的订单截图。

@@ -1,0 +1,24 @@
+在 agent/rule_router.py 中做以下修改。
+
+1. 顶部加入：
+
+from agent.robot_diagnosis_router import build_robot_diagnosis_route, is_robot_diagnosis_query
+
+2. 在 route_user_query(text) 中，扫地机器人知识类判断之前加入：
+
+if is_robot_diagnosis_query(text):
+    return build_robot_diagnosis_route(text)
+
+推荐放在：
+
+if is_robot_vacuum_query(text):
+    ...
+
+这个分支内部最前面，例如：
+
+if is_robot_vacuum_query(text):
+    if is_robot_diagnosis_query(text):
+        return build_robot_diagnosis_route(text)
+
+    if _contains_any(text, ROBOT_FAULT_WORDS + ROBOT_MAINTENANCE_WORDS + ROBOT_AFTERSALE_WORDS):
+        ...

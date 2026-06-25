@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ecommerce_agent_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ecommerce_agent
+      POSTGRES_USER: agent_user
+      POSTGRES_PASSWORD: agent_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - ecommerce_agent_pgdata:/var/lib/postgresql/data
+
+volumes:
+  ecommerce_agent_pgdata:

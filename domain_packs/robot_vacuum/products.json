@@ -1,0 +1,92 @@
+[
+  {
+    "product_id": "RV1001",
+    "name": "CleanBot S1 标准版扫地机器人",
+    "category": "扫地机器人",
+    "price": 1299,
+    "suction_pa": 3000,
+    "navigation": "陀螺仪导航",
+    "battery_mah": 3200,
+    "runtime_min": 120,
+    "suitable_area": "60-90㎡",
+    "mop": false,
+    "auto_dust_collection": false,
+    "auto_mop_wash": false,
+    "obstacle_avoidance": "基础碰撞避障",
+    "target_users": [
+      "小户型",
+      "预算有限",
+      "硬地面"
+    ],
+    "warranty_months": 12
+  },
+  {
+    "product_id": "RV2001",
+    "name": "CleanBot L2 激光导航扫拖一体机器人",
+    "category": "扫拖一体机器人",
+    "price": 1999,
+    "suction_pa": 4000,
+    "navigation": "LDS激光导航",
+    "battery_mah": 5200,
+    "runtime_min": 180,
+    "suitable_area": "90-140㎡",
+    "mop": true,
+    "auto_dust_collection": false,
+    "auto_mop_wash": false,
+    "obstacle_avoidance": "结构光避障",
+    "water_tank_ml": 280,
+    "target_users": [
+      "中等户型",
+      "扫拖一体",
+      "养宠家庭"
+    ],
+    "warranty_months": 12
+  },
+  {
+    "product_id": "RV3001",
+    "name": "CleanBot X3 Pro 自动集尘扫拖机器人",
+    "category": "扫拖一体机器人",
+    "price": 2999,
+    "suction_pa": 5000,
+    "navigation": "LDS激光导航",
+    "battery_mah": 5200,
+    "runtime_min": 200,
+    "suitable_area": "120-180㎡",
+    "mop": true,
+    "auto_dust_collection": true,
+    "auto_mop_wash": false,
+    "obstacle_avoidance": "AI视觉避障",
+    "water_tank_ml": 300,
+    "target_users": [
+      "大户型",
+      "养宠家庭",
+      "自动集尘"
+    ],
+    "warranty_months": 24
+  },
+  {
+    "product_id": "RV4001",
+    "name": "CleanBot M5 Ultra 全能基站扫拖机器人",
+    "category": "全能基站扫拖机器人",
+    "price": 4299,
+    "suction_pa": 6000,
+    "navigation": "LDS激光导航",
+    "battery_mah": 6400,
+    "runtime_min": 240,
+    "suitable_area": "150-250㎡",
+    "mop": true,
+    "auto_dust_collection": true,
+    "auto_mop_wash": true,
+    "hot_air_drying": true,
+    "obstacle_avoidance": "AI视觉+结构光避障",
+    "clean_water_tank_l": 4.0,
+    "dirty_water_tank_l": 3.5,
+    "target_users": [
+      "大户型",
+      "深度清洁",
+      "懒人全自动",
+      "养宠家庭"
+    ],
+    "warranty_months": 24
+  }
+]

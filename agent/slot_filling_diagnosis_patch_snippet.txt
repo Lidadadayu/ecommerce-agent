@@ -1,0 +1,11 @@
+在 agent/slot_filling.py 的 allowed args 配置中加入：
+
+"robot_vacuum_diagnosis": {
+    "query",
+    "product_id",
+    "order_id",
+    "user_has_checked",
+    "want_repair",
+},
+
+也就是允许该工具接收这些参数。

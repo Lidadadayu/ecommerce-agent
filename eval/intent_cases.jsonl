@@ -1,0 +1,5 @@
+{"query":"订单 O202605010001 到哪了？","expected_intent":"logistics_query","expected_tool":"logistics_query","expected_order_id":"O202605010001"}
+{"query":"帮我查一下 O202605010001 这个订单","expected_intent":"order_query","expected_tool":"order_query","expected_order_id":"O202605010001"}
+{"query":"我要申请 O202605010001 退货，原因是耳机佩戴不合适，未拆封","expected_intent":"ticket_create","expected_tool":"ticket_create","expected_order_id":"O202605010001","expected_after_sale_type":"return"}
+{"query":"这个订单昨天刚到，但是我发现包装破了，想看看能不能换一个","expected_intent":"aftersale_check","expected_tool":null,"expected_order_id":null,"expected_after_sale_type":"exchange","expected_missing_slots":["order_id"]}
+{"query":"扫地机器人拖地时不出水怎么办？","expected_intent":"robot_vacuum_diagnosis","expected_tool":"robot_vacuum_diagnosis"}

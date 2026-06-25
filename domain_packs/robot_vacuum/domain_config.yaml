@@ -1,0 +1,143 @@
+domain_id: robot_vacuum
+domain_name: 扫地机器人与扫拖一体机器人
+project_title: 面向电商售前与售后场景的可配置 Agentic RAG 智能业务 Agent 系统
+demo_title: 扫地机器人售前售后一体化智能客服 Agent
+
+description: >
+  当前领域包面向扫地机器人与扫拖一体机器人，覆盖售前选购、产品参数咨询、
+  故障排查、维护保养、售后政策解释、维修建议与人工审核场景。
+
+supported_intents:
+  - robot_vacuum_search
+  - robot_vacuum_detail
+  - robot_vacuum_compare
+  - robot_vacuum_knowledge_query
+  - presales_consult
+  - product_compare
+  - troubleshooting
+  - maintenance_guide
+  - policy_query
+  - aftersale_check
+  - ticket_create
+  - order_query
+  - logistics_query
+
+knowledge_categories:
+  robot_vacuum_troubleshooting: 故障检测与修复
+  robot_vacuum_faq: 基础问答
+  robot_vacuum_mop_faq: 扫拖一体问答
+  robot_vacuum_maintenance: 维护保养
+  robot_vacuum_buying_guide: 选购指南
+  robot_vacuum_aftersale_policy: 售后政策
+
+keywords:
+  product_words:
+    - 扫地机器人
+    - 扫拖一体
+    - 扫拖一体机器人
+    - 扫拖机器人
+    - 机器人
+    - 基站
+    - 尘盒
+    - 水箱
+    - 拖布
+    - 边刷
+    - 主刷
+    - 滚刷
+    - 尘袋
+    - 滤网
+    - 激光雷达
+    - 雷达
+    - LDS
+    - VSLAM
+  presales_words:
+    - 推荐
+    - 怎么选
+    - 选购
+    - 买哪款
+    - 适合
+    - 预算
+    - 价格
+    - 多少钱
+    - 参数
+    - 对比
+    - 比较
+    - 区别
+    - 哪个好
+    - 大户型
+    - 小户型
+    - 养宠
+    - 宠物
+    - 猫
+    - 狗
+    - 毛发
+    - 吸力
+    - 续航
+    - 避障
+    - 自动集尘
+    - 自动洗拖布
+    - 热风烘干
+    - 全能基站
+  fault_words:
+    - 故障
+    - 坏了
+    - 怎么办
+    - 不动
+    - 不启动
+    - 无法启动
+    - 开机无反应
+    - 自动关机
+    - 不回充
+    - 回充失败
+    - 找不到基站
+    - 建图失败
+    - 地图丢失
+    - 雷达异常
+    - 激光雷达
+    - 原地打转
+    - 卡住
+    - 吸力变小
+    - 噪音
+    - 异响
+    - 不出水
+    - 拖地不出水
+    - 漏水
+    - 边刷不转
+    - 主刷不转
+    - 滚刷缠绕
+    - APP连接不上
+    - 无法连接
+    - 维修
+    - 修复
+    - 检测
+  maintenance_words:
+    - 保养
+    - 维护
+    - 清理
+    - 清洁
+    - 多久换
+    - 更换周期
+    - 耗材
+    - 滤网
+    - 尘袋
+    - 拖布
+    - 边刷
+    - 主刷
+    - 长期存放
+  aftersales_words:
+    - 保修
+    - 售后
+    - 退货
+    - 退款
+    - 换货
+    - 维修政策
+    - 免费维修
+    - 人工审核
+    - 赔偿
+    - 赔付
+
+prompt_rules:
+  - 回答售前问题时，优先结合商品参数、使用场景和选购指南，不要虚构不存在的型号。
+  - 回答故障问题时，先给出安全提醒，再按“现象判断—自查步骤—处理建议—是否建议售后”的结构回答。
+  - 涉及拆机、电池鼓包、主板故障、进水、异响严重、充电异常时，应建议停止使用并联系售后。
+  - 涉及退款、换货、赔付、维修是否免费时，不能承诺一定成功，应说明以订单状态、保修规则和人工审核为准。

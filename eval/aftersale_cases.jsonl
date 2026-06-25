@@ -1,0 +1,4 @@
+{"order_id":"O202605010001","ticket_type":"return","reason":"耳机佩戴不合适，未拆封","application_time":"2026-05-05 10:00:00","package_complete":true,"expected_eligible":true}
+{"order_id":"O202605010001","ticket_type":"return","reason":"耳机佩戴不合适，未拆封","application_time":"2026-05-20 10:00:00","package_complete":true,"expected_eligible":false}
+{"order_id":"O202605030001","ticket_type":"return","reason":"不想要了","application_time":"2026-05-04 18:00:00","package_complete":true,"expected_eligible":false}
+{"order_id":"O202605030001","ticket_type":"return","reason":"收到后发现牛排包装破损，存在质量问题","application_time":"2026-05-04 18:00:00","package_complete":true,"expected_eligible":true}
