@@ -62,19 +62,6 @@ api/server.py                     默认注册普通聊天和流式聊天
 api/stream_routes.py              SSE 流式聊天路由
 scripts/run_system.py             最终一键启动入口
 ```
-
-## 不建议继续开发的旧入口
-
-这些文件现在只是兼容入口或旧文档：
-
-```text
-app.py
-app_api.py
-app_api_humanized.py
-scripts/run_system_streaming.py
-scripts/run_api_streaming.py
-scripts/run_web.py
-scripts/run_web_api.py
 scripts/run_web_api_humanized.py
 README_REFACTOR.md
 RUN_SYSTEM.md
